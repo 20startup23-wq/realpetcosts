@@ -1,0 +1,307 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Cost Calculator 2025 — How Much Does a Pet Really Cost? | RealPetCosts.com</title>
+<meta name="description" content="Find out exactly what a dog, cat, or other pet costs per year and over a lifetime. Free pet cost calculator with 2025 data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style is:global>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#1A1714;line-height:1.6}
+nav{background:#1A1714;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.logo{font-family:'DM Serif Display',serif;font-size:18px;color:#fff;text-decoration:none}
+.logo span{color:#FAC775}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none}
+nav ul a:hover{color:#fff}
+.hero{background:#1A1714;padding:56px 24px 48px;text-align:center}
+.badge{display:inline-block;background:#C4700A;color:#fff;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:20px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(28px,5vw,48px);color:#fff;line-height:1.15;max-width:720px;margin:0 auto 16px;letter-spacing:-0.5px}
+.hero h1 em{color:#FAC775;font-style:italic}
+.hero p{font-size:17px;color:rgba(255,255,255,0.65);max-width:520px;margin:0 auto 32px;line-height:1.65}
+.stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.stat .n{font-family:'DM Serif Display',serif;font-size:30px;color:#FAC775;display:block}
+.stat .l{font-size:12px;color:rgba(255,255,255,0.45)}
+.ad-top{margin:16px auto;max-width:1080px;padding:0 20px}
+.ad-zone{background:#F0EBE1;border:1px dashed rgba(26,23,20,0.2);border-radius:10px;height:90px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#857E77;letter-spacing:0.05em;text-transform:uppercase}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.two-col{display:grid;grid-template-columns:1fr 300px;gap:32px;padding:32px 0}
+@media(max-width:768px){.two-col{grid-template-columns:1fr}}
+.sticky{position:sticky;top:72px;display:flex;flex-direction:column;gap:20px}
+.calc-card{background:#fff;border-radius:16px;border:1px solid rgba(26,23,20,0.1);overflow:hidden;box-shadow:0 2px 20px rgba(26,23,20,0.06)}
+.calc-head{background:#FDF0DC;border-bottom:1px solid rgba(196,112,10,0.2);padding:20px 24px}
+.calc-head h2{font-family:'DM Serif Display',serif;font-size:20px;margin-bottom:4px}
+.calc-head p{font-size:13px;color:#854F0B}
+.calc-body{padding:24px}
+.flbl{font-size:11px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:#857E77;margin-bottom:10px;display:block}
+.fg{margin-bottom:20px}
+.pg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.pb{display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px 6px;border-radius:10px;border:1.5px solid rgba(26,23,20,0.12);background:#FAF7F2;cursor:pointer;font-family:inherit;transition:all 0.15s}
+.pb:hover,.pb.on{border-color:#C4700A;background:#FDF0DC}
+.pb .ic{font-size:22px}
+.pb .lb{font-size:12px;font-weight:500;color:#4A4540}
+.pb.on .lb{color:#C4700A}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sb{padding:12px 8px;border-radius:10px;border:1.5px solid rgba(26,23,20,0.12);background:#FAF7F2;cursor:pointer;font-family:inherit;text-align:center;transition:all 0.15s}
+.sb:hover,.sb.on{border-color:#C4700A;background:#FDF0DC}
+.sb .sm{font-size:13px;font-weight:600;color:#1A1714}
+.sb.on .sm{color:#C4700A}
+.sb .ss{font-size:11px;color:#857E77}
+.trow{display:flex;align-items:center;justify-content:space-between;background:#FAF7F2;border-radius:10px;padding:12px 16px;border:1px solid rgba(26,23,20,0.1);margin-bottom:8px}
+.tlbl .tl{font-size:14px;font-weight:500}
+.tlbl .ts{font-size:12px;color:#857E77;margin-top:2px}
+.tsw{width:44px;height:24px;border-radius:12px;background:rgba(26,23,20,0.2);border:none;cursor:pointer;position:relative;transition:background 0.2s;flex-shrink:0}
+.tsw.on{background:#C4700A}
+.tk{position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:white;transition:left 0.2s}
+.tsw.on .tk{left:23px}
+.vtabs{display:flex;gap:4px;background:#FAF7F2;border-radius:10px;padding:4px;border:1px solid rgba(26,23,20,0.1);margin:16px 0}
+.vt{flex:1;padding:7px 0;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:500;font-family:inherit;background:transparent;color:#857E77;transition:all 0.15s}
+.vt.on{background:#fff;color:#1A1714;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.sc{background:#FAF7F2;border-radius:10px;padding:16px;border:1px solid rgba(26,23,20,0.1)}
+.sc .sl{font-size:11px;color:#857E77;margin-bottom:6px}
+.sc .sv{font-family:'DM Serif Display',serif;font-size:26px}
+.sc.hi{background:#FDF0DC;border-color:rgba(196,112,10,0.3)}
+.sc.hi .sv{color:#C4700A}
+.bklist{border-radius:10px;border:1px solid rgba(26,23,20,0.1);overflow:hidden;margin-bottom:14px}
+.bkrow{padding:12px 14px;border-bottom:1px solid rgba(26,23,20,0.08)}
+.bkrow:last-child{border-bottom:none}
+.bkrow.ins{background:#FDF0DC}
+.bkr-top{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.bic{font-size:14px;color:#857E77;flex-shrink:0;line-height:1}
+.bkrow.ins .bic{color:#C4700A}
+.bnm{font-size:13px;color:#4A4540;flex:1;min-width:0}
+.bvl{font-size:13px;font-weight:600;color:#1A1714;white-space:nowrap;flex-shrink:0}
+.bkrow.ins .bnm{color:#854F0B}
+.bkrow.ins .bvl{color:#C4700A}
+.bbg{height:4px;background:#F0EBE1;border-radius:2px}
+.bb{height:100%;background:#C4700A;border-radius:2px;transition:width 0.4s}
+.bkrow.ins .bb{background:#EF9F27}
+.mobox{display:flex;justify-content:space-between;align-items:center;background:#1A1714;border-radius:10px;padding:14px 18px;margin-bottom:12px}
+.mobox .ml{font-size:13px;color:rgba(255,255,255,0.6)}
+.mobox .mv{font-family:'DM Serif Display',serif;font-size:20px;color:#FAC775}
+.fine{font-size:11px;color:#857E77;line-height:1.6}
+.side-card{background:#fff;border-radius:16px;border:1px solid rgba(26,23,20,0.1);padding:20px;box-shadow:0 1px 8px rgba(26,23,20,0.05)}
+.side-card h3{font-family:'DM Serif Display',serif;font-size:16px;margin-bottom:12px}
+.alink{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:8px;background:#FAF7F2;border:1px solid rgba(26,23,20,0.1);text-decoration:none;color:#1A1714;font-size:13px;font-weight:500;margin-bottom:8px;transition:all 0.15s}
+.alink:hover{border-color:#C4700A;background:#FDF0DC;color:#C4700A}
+.alink:last-child{margin-bottom:0}
+.stats-section{background:#fff;border-top:1px solid rgba(26,23,20,0.1);border-bottom:1px solid rgba(26,23,20,0.1);padding:56px 24px}
+.stats-section h2{font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,32px);text-align:center;margin-bottom:36px}
+.sgrid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.scard{background:#FAF7F2;border-radius:16px;border:1px solid rgba(26,23,20,0.08);padding:28px 20px;text-align:center}
+.scard .big{font-family:'DM Serif Display',serif;font-size:40px;color:#C4700A;line-height:1;margin-bottom:10px}
+.scard .desc{font-size:14px;color:#4A4540;line-height:1.5}
+.faq-wrap{padding:56px 0}
+.faq-wrap h2{font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,30px);margin-bottom:28px}
+.faq{border-bottom:1px solid rgba(26,23,20,0.1);padding:18px 0}
+.faq h3{font-size:15px;font-weight:600;margin-bottom:8px}
+.faq p{font-size:14px;color:#4A4540;line-height:1.65}
+footer{background:#1A1714;color:rgba(255,255,255,0.45);text-align:center;padding:32px 24px}
+footer .fl{font-family:'DM Serif Display',serif;font-size:16px;color:#FAC775;margin-bottom:8px}
+footer p{font-size:12px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">Real<span>Pet</span>Costs</a>
+  <ul>
+    <li><a href="#calculator">Calculator</a></li>
+    <li><a href="#facts">Pet Facts</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="badge">2025 data — updated monthly</div>
+  <h1>How much does a pet <em>really</em> cost?</h1>
+  <p>Nearly 8 in 10 pet owners underestimate the real number. Get accurate costs before you say yes.</p>
+  <div class="stats">
+    <div class="stat"><span class="n">$34,550</span><span class="l">Avg dog lifetime cost</span></div>
+    <div class="stat"><span class="n">8 in 10</span><span class="l">Owners underestimate</span></div>
+    <div class="stat"><span class="n">$32,170</span><span class="l">Avg cat lifetime cost</span></div>
+  </div>
+</div>
+
+<div class="ad-top">
+  <div class="ad-zone">Advertisement — Google AdSense 728×90</div>
+</div>
+
+<div class="wrap">
+  <div class="two-col" id="calculator">
+    <div>
+      <div class="calc-card">
+        <div class="calc-head">
+          <h2>Pet cost calculator</h2>
+          <p>Select your pet for a full first year and lifetime breakdown</p>
+        </div>
+        <div class="calc-body">
+          <span class="flbl">Choose your pet</span>
+          <div class="fg pg" id="pet-grid"></div>
+          <div id="size-section" style="display:none">
+            <span class="flbl">Dog size</span>
+            <div class="fg sg" id="size-grid"></div>
+          </div>
+          <div id="ins-row" style="display:none" class="trow">
+            <div class="tlbl">
+              <div class="tl">Include pet insurance</div>
+              <div class="ts" id="ins-label"></div>
+            </div>
+            <button class="tsw" id="ins-toggle" onclick="toggleIns()" aria-label="Toggle insurance"><span class="tk"></span></button>
+          </div>
+          <div id="results" style="display:none">
+            <div class="vtabs">
+              <button class="vt on" onclick="setView('firstYear',this)">First year</button>
+              <button class="vt" onclick="setView('ongoing',this)">Ongoing / year</button>
+            </div>
+            <div class="sgrid">
+              <div class="sc hi"><div class="sl" id="c1l">First year total</div><div class="sv" id="c1v">—</div></div>
+              <div class="sc"><div class="sl" id="c2l">Lifetime</div><div class="sv" id="c2v">—</div></div>
+            </div>
+            <div class="bklist" id="breakdown"></div>
+            <div class="mobox"><span class="ml">Monthly budget</span><span class="mv" id="monthly">—</span></div>
+            <p class="fine">Based on 2025 Rover, ASPCA & APPA data. Costs vary by location, breed, and care level. Budget a separate $2,000–$5,000 emergency vet fund.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sticky">
+      <div class="side-card">
+        <h3>Top pet supplies</h3>
+        <a href="https://www.chewy.com" target="_blank" class="alink">Chewy →</a>
+        <a href="https://www.petsmart.com" target="_blank" class="alink">PetSmart →</a>
+        <a href="https://www.amazon.com/pet-supplies" target="_blank" class="alink">Amazon Pets →</a>
+      </div>
+      <div class="side-card">
+        <h3>Pet insurance quotes</h3>
+        <a href="https://www.lemonade.com/pet" target="_blank" class="alink">Lemonade →</a>
+        <a href="https://www.healthypawspetinsurance.com" target="_blank" class="alink">Healthy Paws →</a>
+        <a href="https://www.embracepetinsurance.com" target="_blank" class="alink">Embrace →</a>
+      </div>
+      <div class="ad-zone" style="min-height:250px">Ad — 300×250</div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-section" id="facts">
+  <h2>The numbers most pet owners never see</h2>
+  <div class="sgrid4">
+    <div class="scard"><div class="big">8 in 10</div><div class="desc">Pet owners underestimate lifetime costs</div></div>
+    <div class="scard"><div class="big">$20k</div><div class="desc">Real lifetime cost of a cat vs $6k predicted</div></div>
+    <div class="scard"><div class="big">$34k</div><div class="desc">Average lifetime cost of a medium dog</div></div>
+    <div class="scard"><div class="big">$1,500</div><div class="desc">Average emergency vet visit cost</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="faq-wrap" id="faq">
+    <h2>Common questions</h2>
+    <div class="faq"><h3>How much does a dog cost per year?</h3><p>A small dog costs $1,390–$2,000 per year. A medium dog runs $2,100–$3,200. A large dog can cost $3,000–$5,295 annually. First year costs are always higher due to spay/neuter, supplies, and training.</p></div>
+    <div class="faq"><h3>How much does a cat cost per year?</h3><p>Cats typically cost $760–$1,500 per year for food, vet care, litter, and supplies. First year costs are higher — expect $1,750–$2,200 including spay/neuter and initial setup.</p></div>
+    <div class="faq"><h3>Is pet insurance worth it?</h3><p>Pet insurance makes financial sense if your pet needs surgery or chronic care. A single emergency visit averages $800–$1,500. Insurance runs $350–$1,100 per year depending on pet and coverage level.</p></div>
+    <div class="faq"><h3>What is the lifetime cost of a pet?</h3><p>A medium dog costs around $34,000 over 12 years. A cat costs $20,000–$32,000 over 16 years. Most owners predict far less — the gap between predicted and actual is the biggest financial surprise in pet ownership.</p></div>
+    <div class="faq"><h3>What costs do first-time pet owners miss?</h3><p>The most commonly missed costs are boarding/pet sitting ($300–$700/yr), grooming ($200–$500/yr), dental cleanings ($500–$1,000), and emergency vet care. Budget a separate $2,000–$5,000 emergency fund.</p></div>
+  </div>
+</div>
+
+<footer>
+  <div class="fl">RealPetCosts.com</div>
+  <p>Data updated monthly · Not financial advice · © 2025 RealPetCosts.com</p>
+</footer>
+
+<script>
+const COSTS={dog:{small:{firstYear:{food:280,vet:450,grooming:220,supplies:260,training:200,spayNeuter:350,toys:100,boarding:300,misc:110},ongoing:{food:280,vet:400,grooming:220,supplies:60,training:0,spayNeuter:0,toys:100,boarding:300,misc:110}},medium:{firstYear:{food:480,vet:550,grooming:320,supplies:320,training:300,spayNeuter:420,toys:150,boarding:400,misc:150},ongoing:{food:480,vet:500,grooming:320,supplies:80,training:0,spayNeuter:0,toys:150,boarding:400,misc:150}},large:{firstYear:{food:800,vet:700,grooming:420,supplies:460,training:500,spayNeuter:520,toys:200,boarding:600,misc:200},ongoing:{food:800,vet:650,grooming:420,supplies:100,training:0,spayNeuter:0,toys:200,boarding:600,misc:200}}},cat:{standard:{firstYear:{food:320,vet:380,grooming:50,supplies:220,spayNeuter:300,toys:80,litter:300,misc:100},ongoing:{food:320,vet:350,grooming:50,supplies:50,spayNeuter:0,toys:80,litter:300,misc:100}}},rabbit:{standard:{firstYear:{food:200,vet:300,supplies:220,spayNeuter:250,toys:50,hay:200,misc:80},ongoing:{food:200,vet:250,supplies:40,spayNeuter:0,toys:50,hay:200,misc:80}}},bird:{standard:{firstYear:{food:150,vet:200,supplies:320,training:60,toys:80,misc:60},ongoing:{food:150,vet:150,supplies:60,training:0,toys:80,misc:60}}}};
+const LIFE={dog:{small:15,medium:12,large:10},cat:{standard:16},rabbit:{standard:10},bird:{standard:12}};
+const INS={dog:{small:500,medium:800,large:1100},cat:{standard:350},rabbit:{standard:0},bird:{standard:0}};
+const CLBLS={food:"Food & treats",vet:"Veterinary care",grooming:"Grooming",supplies:"Supplies",training:"Training",spayNeuter:"Spay / neuter",toys:"Toys & enrichment",boarding:"Boarding / sitting",litter:"Litter",hay:"Hay & bedding",misc:"Miscellaneous"};
+const CICONS={food:"🍖",vet:"🩺",grooming:"✂️",supplies:"📦",training:"🎓",spayNeuter:"❤️",toys:"⭐",boarding:"🏠",litter:"📦",hay:"🌿",misc:"•"};
+let pet=null,size="medium",view="firstYear",ins=false;
+function fmt(n){return"$"+Math.round(n).toLocaleString()}
+function fmtK(n){const v=Math.round(n/100)/10;return v>=10?"$"+Math.round(v)+"k":"$"+v.toFixed(1)+"k"}
+function renderPets(){
+  const g=document.getElementById("pet-grid");g.innerHTML="";
+  [{id:"dog",l:"Dog",e:"🐕"},{id:"cat",l:"Cat",e:"🐈"},{id:"rabbit",l:"Rabbit",e:"🐇"},{id:"bird",l:"Bird",e:"🐦"}].forEach(p=>{
+    const b=document.createElement("button");
+    b.className="pb"+(pet===p.id?" on":"");
+    b.innerHTML=`<span class="ic">${p.e}</span><span class="lb">${p.l}</span>`;
+    b.onclick=()=>{pet=p.id;ins=false;render()};
+    g.appendChild(b);
+  });
+}
+function renderSizes(){
+  const sec=document.getElementById("size-section");
+  sec.style.display=pet==="dog"?"block":"none";
+  if(pet!=="dog")return;
+  const g=document.getElementById("size-grid");g.innerHTML="";
+  [{id:"small",l:"Small",s:"Under 25 lbs"},{id:"medium",l:"Medium",s:"25–60 lbs"},{id:"large",l:"Large",s:"Over 60 lbs"}].forEach(s=>{
+    const b=document.createElement("button");
+    b.className="sb"+(size===s.id?" on":"");
+    b.innerHTML=`<div class="sm">${s.l}</div><div class="ss">${s.s}</div>`;
+    b.onclick=()=>{size=s.id;render()};
+    g.appendChild(b);
+  });
+}
+function renderIns(){
+  const v=pet==="dog"?size:"standard";
+  const amt=pet?INS[pet]?.[v]||0:0;
+  const row=document.getElementById("ins-row");
+  if(!pet||amt===0){row.style.display="none";return}
+  row.style.display="flex";
+  document.getElementById("ins-label").textContent="Est. "+fmt(amt)+"/yr — accidents, illness, preventive care";
+  const sw=document.getElementById("ins-toggle");
+  sw.className="tsw"+(ins?" on":"");
+}
+function toggleIns(){ins=!ins;render()}
+function renderResults(){
+  if(!pet){document.getElementById("results").style.display="none";return}
+  document.getElementById("results").style.display="block";
+  const v=pet==="dog"?size:"standard";
+  const data=COSTS[pet]?.[v];if(!data)return;
+  const insAmt=ins?(INS[pet]?.[v]||0):0;
+  const lifespan=LIFE[pet]?.[v];
+  const cats=data[view];
+  const base=Object.values(cats).reduce((a,b)=>a+b,0);
+  const total=base+insAmt;
+  const fy=Object.values(data.firstYear).reduce((a,b)=>a+b,0)+(ins?INS[pet][v]:0);
+  const ong=Object.values(data.ongoing).reduce((a,b)=>a+b,0)+(ins?INS[pet][v]:0);
+  const lifetime=fy+(ong*(lifespan-1));
+  document.getElementById("c1l").textContent=view==="firstYear"?"First year total":"Annual cost";
+  document.getElementById("c1v").textContent=fmt(total);
+  document.getElementById("c2l").textContent="Lifetime ("+lifespan+" yrs)";
+  document.getElementById("c2v").textContent=fmtK(lifetime);
+  document.getElementById("monthly").textContent=fmt(total/12)+"/mo";
+  const entries=Object.entries(cats).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+  const maxV=Math.max(...entries.map(([,v])=>v),insAmt);
+  const bd=document.getElementById("breakdown");bd.innerHTML="";
+  entries.forEach(([key,val],i)=>{
+    const row=document.createElement("div");
+    row.className="bkrow";
+    row.style.borderBottom=i<entries.length-1?"1px solid rgba(26,23,20,0.08)":"none";
+    const pct=Math.round((val/maxV)*100);
+    row.innerHTML=`<div class="bkr-top"><span class="bic">${CICONS[key]||"•"}</span><span class="bnm">${CLBLS[key]||key}</span><span class="bvl">${fmt(val)}</span></div><div class="bbg"><div class="bb" style="width:${pct}%"></div></div>`;
+    bd.appendChild(row);
+  });
+  if(ins&&insAmt>0){
+    const row=document.createElement("div");
+    row.className="bkrow ins";
+    const pct=Math.round((insAmt/maxV)*100);
+    row.innerHTML=`<div class="bkr-top"><span class="bic">🛡️</span><span class="bnm">Pet insurance</span><span class="bvl">${fmt(insAmt)}</span></div><div class="bbg"><div class="bb" style="width:${pct}%"></div></div>`;
+    bd.appendChild(row);
+  }
+}
+function setView(v,btn){
+  view=v;
+  document.querySelectorAll(".vt").forEach(b=>b.classList.remove("on"));
+  btn.classList.add("on");
+  renderResults();
+}
+function render(){renderPets();renderSizes();renderIns();renderResults()}
+render();
+</script>
+</body>
+</html>
