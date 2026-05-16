@@ -133,7 +133,7 @@ footer p{font-size:12px}
 </div>
 
 <div class="ad-top">
-  <div class="ad-zone">Advertisement — Google AdSense 728×90</div>
+  <div class="ad-zone">Advertisement - Google AdSense 728x90</div>
 </div>
 
 <div class="wrap">
@@ -145,66 +145,57 @@ footer p{font-size:12px}
           <p>Select your pet for a full first year and lifetime breakdown</p>
         </div>
         <div class="calc-body">
-
           <span class="flbl">Choose your pet</span>
           <div class="fg pg" id="pet-grid"></div>
-
           <div id="size-section" style="display:none">
             <span class="flbl">Dog size</span>
             <div class="fg sg" id="size-grid"></div>
           </div>
-
           <div class="fg">
             <span class="flbl">Your monthly income (optional)</span>
             <div class="income-wrap">
               <span>$</span>
-              <input type="number" id="income-input" placeholder="e.g. 4000" oninput="renderResults()" />
+              <input type="number" id="income-input" placeholder="e.g. 4000" />
             </div>
           </div>
-
           <div id="ins-row" style="display:none" class="trow">
             <div class="tlbl">
               <div class="tl">Include pet insurance</div>
               <div class="ts" id="ins-label"></div>
             </div>
-            <button class="tsw" id="ins-toggle" onclick="toggleIns()" aria-label="Toggle insurance"><span class="tk"></span></button>
+            <button class="tsw" id="ins-toggle" aria-label="Toggle insurance"><span class="tk"></span></button>
           </div>
-
           <div id="results" style="display:none">
             <div class="vtabs">
-              <button class="vt on" id="tab-first" onclick="setView('firstYear')">First year</button>
-              <button class="vt" id="tab-ongoing" onclick="setView('ongoing')">Ongoing / year</button>
+              <button class="vt on" id="tab-first">First year</button>
+              <button class="vt" id="tab-ongoing">Ongoing / year</button>
             </div>
             <div class="sgrid">
-              <div class="sc hi"><div class="sl" id="c1l">First year total</div><div class="sv" id="c1v">—</div></div>
-              <div class="sc"><div class="sl" id="c2l">Lifetime</div><div class="sv" id="c2v">—</div></div>
+              <div class="sc hi"><div class="sl" id="c1l">First year total</div><div class="sv" id="c1v">-</div></div>
+              <div class="sc"><div class="sl" id="c2l">Lifetime</div><div class="sv" id="c2v">-</div></div>
             </div>
             <div class="bklist" id="breakdown"></div>
-            <div class="mobox">
-              <span class="ml">Monthly budget</span>
-              <span class="mv" id="monthly">—</span>
-            </div>
+            <div class="mobox"><span class="ml">Monthly budget</span><span class="mv" id="monthly">-</span></div>
             <div class="verdict-box" id="verdict"></div>
-            <p class="fine">Based on 2025 Rover, ASPCA & APPA data. Costs vary by location, breed, and care level. Budget a separate $2,000–$5,000 emergency vet fund.</p>
+            <p class="fine">Based on 2025 Rover, ASPCA and APPA data. Costs vary by location, breed, and care level. Budget a separate $2,000-$5,000 emergency vet fund.</p>
           </div>
-
         </div>
       </div>
     </div>
     <div class="sticky">
       <div class="side-card">
         <h3>Top pet supplies</h3>
-        <a href="https://www.chewy.com" target="_blank" class="alink">Chewy →</a>
-        <a href="https://www.petsmart.com" target="_blank" class="alink">PetSmart →</a>
-        <a href="https://www.amazon.com/pet-supplies" target="_blank" class="alink">Amazon Pets →</a>
+        <a href="https://www.chewy.com" target="_blank" class="alink">Chewy</a>
+        <a href="https://www.petsmart.com" target="_blank" class="alink">PetSmart</a>
+        <a href="https://www.amazon.com/pet-supplies" target="_blank" class="alink">Amazon Pets</a>
       </div>
       <div class="side-card">
         <h3>Pet insurance quotes</h3>
-        <a href="https://www.lemonade.com/pet" target="_blank" class="alink">Lemonade →</a>
-        <a href="https://www.healthypawspetinsurance.com" target="_blank" class="alink">Healthy Paws →</a>
-        <a href="https://www.embracepetinsurance.com" target="_blank" class="alink">Embrace →</a>
+        <a href="https://www.lemonade.com/pet" target="_blank" class="alink">Lemonade</a>
+        <a href="https://www.healthypawspetinsurance.com" target="_blank" class="alink">Healthy Paws</a>
+        <a href="https://www.embracepetinsurance.com" target="_blank" class="alink">Embrace</a>
       </div>
-      <div class="ad-zone" style="min-height:250px">Ad — 300×250</div>
+      <div class="ad-zone" style="min-height:250px">Ad - 300x250</div>
     </div>
   </div>
 </div>
@@ -222,192 +213,153 @@ footer p{font-size:12px}
 <div class="wrap">
   <div class="faq-wrap" id="faq">
     <h2>Common questions</h2>
-    <div class="faq"><h3>How much does a dog cost per year?</h3><p>A small dog costs $1,390–$2,000 per year. A medium dog runs $2,100–$3,200. A large dog can cost $3,000–$5,295 annually. First year costs are always higher due to spay/neuter, supplies, and training.</p></div>
-    <div class="faq"><h3>How much does a cat cost per year?</h3><p>Cats typically cost $760–$1,500 per year for food, vet care, litter, and supplies. First year costs are higher — expect $1,750–$2,200 including spay/neuter and initial setup.</p></div>
-    <div class="faq"><h3>Is pet insurance worth it?</h3><p>Pet insurance makes financial sense if your pet needs surgery or chronic care. A single emergency visit averages $800–$1,500. Insurance runs $350–$1,100 per year depending on pet and coverage level.</p></div>
-    <div class="faq"><h3>What is the lifetime cost of a pet?</h3><p>A medium dog costs around $34,000 over 12 years. A cat costs $20,000–$32,000 over 16 years. Most owners predict far less — the gap between predicted and actual is the biggest financial surprise in pet ownership.</p></div>
-    <div class="faq"><h3>What costs do first-time pet owners miss?</h3><p>The most commonly missed costs are boarding/pet sitting ($300–$700/yr), grooming ($200–$500/yr), dental cleanings ($500–$1,000), and emergency vet care. Budget a separate $2,000–$5,000 emergency fund.</p></div>
+    <div class="faq"><h3>How much does a dog cost per year?</h3><p>A small dog costs $1,390-$2,000 per year. A medium dog runs $2,100-$3,200. A large dog can cost $3,000-$5,295 annually. First year costs are always higher due to spay/neuter, supplies, and training.</p></div>
+    <div class="faq"><h3>How much does a cat cost per year?</h3><p>Cats typically cost $760-$1,500 per year for food, vet care, litter, and supplies. First year costs are higher - expect $1,750-$2,200 including spay/neuter and initial setup.</p></div>
+    <div class="faq"><h3>Is pet insurance worth it?</h3><p>Pet insurance makes financial sense if your pet needs surgery or chronic care. A single emergency visit averages $800-$1,500. Insurance runs $350-$1,100 per year depending on pet and coverage level.</p></div>
+    <div class="faq"><h3>What is the lifetime cost of a pet?</h3><p>A medium dog costs around $34,000 over 12 years. A cat costs $20,000-$32,000 over 16 years. Most owners predict far less - the gap between predicted and actual is the biggest financial surprise in pet ownership.</p></div>
+    <div class="faq"><h3>What costs do first-time pet owners miss?</h3><p>The most commonly missed costs are boarding/pet sitting ($300-$700/yr), grooming ($200-$500/yr), dental cleanings ($500-$1,000), and emergency vet care. Budget a separate $2,000-$5,000 emergency fund.</p></div>
   </div>
 </div>
 
 <footer>
   <div class="fl">RealPetCosts.com</div>
-  <p>Data updated monthly · Not financial advice · © 2025 RealPetCosts.com</p>
+  <p>Data updated monthly - Not financial advice - 2025 RealPetCosts.com</p>
 </footer>
 
-<script>
-const COSTS={
-  dog:{
-    small:{
-      firstYear:{food:280,vet:450,grooming:220,supplies:260,training:200,spayNeuter:350,toys:100,boarding:300,misc:110},
-      ongoing:{food:280,vet:400,grooming:220,supplies:60,training:0,spayNeuter:0,toys:100,boarding:300,misc:110}
-    },
-    medium:{
-      firstYear:{food:480,vet:550,grooming:320,supplies:320,training:300,spayNeuter:420,toys:150,boarding:400,misc:150},
-      ongoing:{food:480,vet:500,grooming:320,supplies:80,training:0,spayNeuter:0,toys:150,boarding:400,misc:150}
-    },
-    large:{
-      firstYear:{food:800,vet:700,grooming:420,supplies:460,training:500,spayNeuter:520,toys:200,boarding:600,misc:200},
-      ongoing:{food:800,vet:650,grooming:420,supplies:100,training:0,spayNeuter:0,toys:200,boarding:600,misc:200}
-    }
-  },
-  cat:{
-    standard:{
-      firstYear:{food:320,vet:380,grooming:50,supplies:220,spayNeuter:300,toys:80,litter:300,misc:100},
-      ongoing:{food:320,vet:350,grooming:50,supplies:50,spayNeuter:0,toys:80,litter:300,misc:100}
-    }
-  },
-  rabbit:{
-    standard:{
-      firstYear:{food:200,vet:300,supplies:220,spayNeuter:250,toys:50,hay:200,misc:80},
-      ongoing:{food:200,vet:250,supplies:40,spayNeuter:0,toys:50,hay:200,misc:80}
-    }
-  },
-  bird:{
-    standard:{
-      firstYear:{food:150,vet:200,supplies:320,training:60,toys:80,misc:60},
-      ongoing:{food:150,vet:150,supplies:60,training:0,toys:80,misc:60}
-    }
-  }
-};
-
-const LIFE={dog:{small:15,medium:12,large:10},cat:{standard:16},rabbit:{standard:10},bird:{standard:12}};
-const INS={dog:{small:500,medium:800,large:1100},cat:{standard:350},rabbit:{standard:0},bird:{standard:0}};
-const CLBLS={food:"Food & treats",vet:"Veterinary care",grooming:"Grooming",supplies:"Supplies",training:"Training",spayNeuter:"Spay / neuter",toys:"Toys & enrichment",boarding:"Boarding / sitting",litter:"Litter",hay:"Hay & bedding",misc:"Miscellaneous"};
-const CICONS={food:"🍖",vet:"🩺",grooming:"✂️",supplies:"📦",training:"🎓",spayNeuter:"❤️",toys:"⭐",boarding:"🏠",litter:"📦",hay:"🌿",misc:"•"};
-
-let pet=null, size="medium", view="firstYear", ins=false;
-
-function fmt(n){return "$"+Math.round(n).toLocaleString();}
-function fmtK(n){const v=Math.round(n/100)/10;return v>=10?"$"+Math.round(v)+"k":"$"+v.toFixed(1)+"k";}
-
+<script is:inline>
+var COSTS={dog:{small:{firstYear:{food:280,vet:450,grooming:220,supplies:260,training:200,spayNeuter:350,toys:100,boarding:300,misc:110},ongoing:{food:280,vet:400,grooming:220,supplies:60,training:0,spayNeuter:0,toys:100,boarding:300,misc:110}},medium:{firstYear:{food:480,vet:550,grooming:320,supplies:320,training:300,spayNeuter:420,toys:150,boarding:400,misc:150},ongoing:{food:480,vet:500,grooming:320,supplies:80,training:0,spayNeuter:0,toys:150,boarding:400,misc:150}},large:{firstYear:{food:800,vet:700,grooming:420,supplies:460,training:500,spayNeuter:520,toys:200,boarding:600,misc:200},ongoing:{food:800,vet:650,grooming:420,supplies:100,training:0,spayNeuter:0,toys:200,boarding:600,misc:200}}},cat:{standard:{firstYear:{food:320,vet:380,grooming:50,supplies:220,spayNeuter:300,toys:80,litter:300,misc:100},ongoing:{food:320,vet:350,grooming:50,supplies:50,spayNeuter:0,toys:80,litter:300,misc:100}}},rabbit:{standard:{firstYear:{food:200,vet:300,supplies:220,spayNeuter:250,toys:50,hay:200,misc:80},ongoing:{food:200,vet:250,supplies:40,spayNeuter:0,toys:50,hay:200,misc:80}}},bird:{standard:{firstYear:{food:150,vet:200,supplies:320,training:60,toys:80,misc:60},ongoing:{food:150,vet:150,supplies:60,training:0,toys:80,misc:60}}}};
+var LIFE={dog:{small:15,medium:12,large:10},cat:{standard:16},rabbit:{standard:10},bird:{standard:12}};
+var INS={dog:{small:500,medium:800,large:1100},cat:{standard:350},rabbit:{standard:0},bird:{standard:0}};
+var CLBLS={food:"Food and treats",vet:"Veterinary care",grooming:"Grooming",supplies:"Supplies",training:"Training",spayNeuter:"Spay and neuter",toys:"Toys and enrichment",boarding:"Boarding and sitting",litter:"Litter",hay:"Hay and bedding",misc:"Miscellaneous"};
+var CICONS={food:"food",vet:"vet",grooming:"groom",supplies:"supply",training:"train",spayNeuter:"heart",toys:"toy",boarding:"home",litter:"litter",hay:"hay",misc:"misc"};
+var pet=null,size="medium",view="firstYear",ins=false;
+function fmt(n){return"$"+Math.round(n).toLocaleString();}
+function fmtK(n){var v=Math.round(n/100)/10;return v>=10?"$"+Math.round(v)+"k":"$"+v.toFixed(1)+"k";}
 function getVerdict(monthly,income){
   if(!income||income<=0)return null;
-  const pct=Math.round((monthly/income)*100);
-  if(pct<=5)return{msg:"This pet fits comfortably within your budget — "+pct+"% of your monthly income.",color:"#0F6E56",bg:"#E1F5EE"};
-  if(pct<=10)return{msg:"This pet is manageable but will require some budgeting — "+pct+"% of your monthly income.",color:"#854F0B",bg:"#FDF0DC"};
-  if(pct<=15)return{msg:"This pet will stretch your budget. Consider a smaller breed or a cat — "+pct+"% of your monthly income.",color:"#C4700A",bg:"#FEF3E2"};
-  return{msg:"This pet may strain your finances. Build a 3-month emergency fund first — "+pct+"% of your monthly income.",color:"#A32D2D",bg:"#FCEBEB"};
+  var pct=Math.round((monthly/income)*100);
+  if(pct<=5)return{msg:"This pet fits comfortably within your budget - "+pct+"% of your monthly income.",color:"#0F6E56",bg:"#E1F5EE"};
+  if(pct<=10)return{msg:"This pet is manageable but will require some budgeting - "+pct+"% of your monthly income.",color:"#854F0B",bg:"#FDF0DC"};
+  if(pct<=15)return{msg:"This pet will stretch your budget. Consider a smaller breed or a cat - "+pct+"% of your monthly income.",color:"#C4700A",bg:"#FEF3E2"};
+  return{msg:"This pet may strain your finances. Build a 3-month emergency fund first - "+pct+"% of your monthly income.",color:"#A32D2D",bg:"#FCEBEB"};
 }
-
 function renderPets(){
-  const g=document.getElementById("pet-grid");
+  var g=document.getElementById("pet-grid");
   g.innerHTML="";
-  [{id:"dog",l:"Dog",e:"🐕"},{id:"cat",l:"Cat",e:"🐈"},{id:"rabbit",l:"Rabbit",e:"🐇"},{id:"bird",l:"Bird",e:"🐦"}].forEach(function(p){
-    const b=document.createElement("button");
+  var pets=[{id:"dog",l:"Dog",e:"Dog"},{id:"cat",l:"Cat",e:"Cat"},{id:"rabbit",l:"Rabbit",e:"Rabbit"},{id:"bird",l:"Bird",e:"Bird"}];
+  for(var i=0;i<pets.length;i++){
+    var p=pets[i];
+    var b=document.createElement("button");
     b.className="pb"+(pet===p.id?" on":"");
-    b.innerHTML='<span class="ic">'+p.e+'</span><span class="lb">'+p.l+'</span>';
-    b.onclick=function(){pet=p.id;ins=false;render();};
+    b.setAttribute("data-pet",p.id);
+    b.innerHTML='<span class="lb">'+p.l+'</span>';
+    b.addEventListener("click",function(){pet=this.getAttribute("data-pet");ins=false;render();});
     g.appendChild(b);
-  });
+  }
 }
-
 function renderSizes(){
-  const sec=document.getElementById("size-section");
+  var sec=document.getElementById("size-section");
   sec.style.display=pet==="dog"?"block":"none";
   if(pet!=="dog")return;
-  const g=document.getElementById("size-grid");
+  var g=document.getElementById("size-grid");
   g.innerHTML="";
-  [{id:"small",l:"Small",s:"Under 25 lbs"},{id:"medium",l:"Medium",s:"25-60 lbs"},{id:"large",l:"Large",s:"Over 60 lbs"}].forEach(function(s){
-    const b=document.createElement("button");
+  var sizes=[{id:"small",l:"Small",s:"Under 25 lbs"},{id:"medium",l:"Medium",s:"25-60 lbs"},{id:"large",l:"Large",s:"Over 60 lbs"}];
+  for(var i=0;i<sizes.length;i++){
+    var s=sizes[i];
+    var b=document.createElement("button");
     b.className="sb"+(size===s.id?" on":"");
+    b.setAttribute("data-size",s.id);
     b.innerHTML='<div class="sm">'+s.l+'</div><div class="ss">'+s.s+'</div>';
-    b.onclick=function(){size=s.id;render();};
+    b.addEventListener("click",function(){size=this.getAttribute("data-size");render();});
     g.appendChild(b);
-  });
+  }
 }
-
 function renderIns(){
-  const v=pet==="dog"?size:"standard";
-  const amt=pet?INS[pet][v]||0:0;
-  const row=document.getElementById("ins-row");
+  var v=pet==="dog"?size:"standard";
+  var amt=pet?INS[pet][v]||0:0;
+  var row=document.getElementById("ins-row");
   if(!pet||amt===0){row.style.display="none";return;}
   row.style.display="flex";
-  document.getElementById("ins-label").textContent="Est. "+fmt(amt)+"/yr — accidents, illness, preventive care";
-  const sw=document.getElementById("ins-toggle");
+  document.getElementById("ins-label").textContent="Est. "+fmt(amt)+"/yr - accidents, illness, preventive care";
+  var sw=document.getElementById("ins-toggle");
   sw.className="tsw"+(ins?" on":"");
   sw.querySelector(".tk").style.left=ins?"23px":"3px";
 }
-
-window.toggleIns=function(){
-  ins=!ins;
-  render();
-}
-
-window.setView=function(v){
-  view=v;
-  document.getElementById("tab-first").className="vt"+(v==="firstYear"?" on":"");
-  document.getElementById("tab-ongoing").className="vt"+(v==="ongoing"?" on":"");
-  renderResults();
-}
-
 function renderResults(){
   if(!pet){document.getElementById("results").style.display="none";return;}
   document.getElementById("results").style.display="block";
-  const v=pet==="dog"?size:"standard";
-  const data=COSTS[pet][v];
+  var v=pet==="dog"?size:"standard";
+  var data=COSTS[pet][v];
   if(!data)return;
-  const insAmt=ins?(INS[pet][v]||0):0;
-  const lifespan=LIFE[pet][v];
-  const cats=data[view];
-  const base=Object.values(cats).reduce(function(a,b){return a+b;},0);
-  const total=base+insAmt;
-  const fy=Object.values(data.firstYear).reduce(function(a,b){return a+b;},0)+(ins?INS[pet][v]:0);
-  const ong=Object.values(data.ongoing).reduce(function(a,b){return a+b;},0)+(ins?INS[pet][v]:0);
-  const lifetime=fy+(ong*(lifespan-1));
-
+  var insAmt=ins?(INS[pet][v]||0):0;
+  var lifespan=LIFE[pet][v];
+  var cats=data[view];
+  var keys=Object.keys(cats);
+  var base=0;
+  for(var i=0;i<keys.length;i++)base+=cats[keys[i]];
+  var total=base+insAmt;
+  var fykeys=Object.keys(data.firstYear);
+  var fy=0;
+  for(var i=0;i<fykeys.length;i++)fy+=data.firstYear[fykeys[i]];
+  if(ins)fy+=INS[pet][v];
+  var ongkeys=Object.keys(data.ongoing);
+  var ong=0;
+  for(var i=0;i<ongkeys.length;i++)ong+=data.ongoing[ongkeys[i]];
+  if(ins)ong+=INS[pet][v];
+  var lifetime=fy+(ong*(lifespan-1));
   document.getElementById("c1l").textContent=view==="firstYear"?"First year total":"Annual cost";
   document.getElementById("c1v").textContent=fmt(total);
   document.getElementById("c2l").textContent="Lifetime ("+lifespan+" yrs)";
   document.getElementById("c2v").textContent=fmtK(lifetime);
   document.getElementById("monthly").textContent=fmt(total/12)+"/mo";
-
-  const income=parseFloat(document.getElementById("income-input").value)||0;
-  const verdict=getVerdict(total/12,income);
-  const vbox=document.getElementById("verdict");
+  var income=parseFloat(document.getElementById("income-input").value)||0;
+  var verdict=getVerdict(total/12,income);
+  var vbox=document.getElementById("verdict");
   if(verdict){
     vbox.style.display="block";
     vbox.style.background=verdict.bg;
     vbox.style.color=verdict.color;
-    vbox.style.border="1px solid "+verdict.color+"44";
+    vbox.style.border="1px solid "+verdict.color;
     vbox.textContent=verdict.msg;
   } else {
     vbox.style.display="none";
   }
-
-  const entries=Object.entries(cats).filter(function(e){return e[1]>0;}).sort(function(a,b){return b[1]-a[1];});
-  const maxV=Math.max.apply(null,entries.map(function(e){return e[1];}).concat([insAmt]));
-  const bd=document.getElementById("breakdown");
+  var allkeys=Object.keys(cats);
+  var entries=[];
+  for(var i=0;i<allkeys.length;i++){
+    if(cats[allkeys[i]]>0)entries.push([allkeys[i],cats[allkeys[i]]]);
+  }
+  entries.sort(function(a,b){return b[1]-a[1];});
+  var maxV=insAmt;
+  for(var i=0;i<entries.length;i++)if(entries[i][1]>maxV)maxV=entries[i][1];
+  var bd=document.getElementById("breakdown");
   bd.innerHTML="";
-
-  entries.forEach(function(entry,i){
-    const key=entry[0];
-    const val=entry[1];
-    const row=document.createElement("div");
+  for(var i=0;i<entries.length;i++){
+    var key=entries[i][0];
+    var val=entries[i][1];
+    var row=document.createElement("div");
     row.className="bkrow";
-    row.style.borderBottom=i<entries.length-1?"1px solid rgba(26,23,20,0.08)":"none";
-    const pct=Math.round((val/maxV)*100);
-    row.innerHTML='<div class="bkr-top"><span class="bic">'+(CICONS[key]||"•")+'</span><span class="bnm">'+(CLBLS[key]||key)+'</span><span class="bvl">'+fmt(val)+'</span></div><div class="bbg"><div class="bb" style="width:'+pct+'%"></div></div>';
+    if(i<entries.length-1)row.style.borderBottom="1px solid rgba(26,23,20,0.08)";
+    var pct=Math.round((val/maxV)*100);
+    row.innerHTML='<div class="bkr-top"><span class="bnm">'+(CLBLS[key]||key)+'</span><span class="bvl">'+fmt(val)+'</span></div><div class="bbg"><div class="bb" style="width:'+pct+'%"></div></div>';
     bd.appendChild(row);
-  });
-
+  }
   if(ins&&insAmt>0){
-    const row=document.createElement("div");
+    var row=document.createElement("div");
     row.className="bkrow ins";
-    const pct=Math.round((insAmt/maxV)*100);
-    row.innerHTML='<div class="bkr-top"><span class="bic">🛡️</span><span class="bnm">Pet insurance</span><span class="bvl">'+fmt(insAmt)+'</span></div><div class="bbg"><div class="bb" style="width:'+pct+'%"></div></div>';
+    var pct=Math.round((insAmt/maxV)*100);
+    row.innerHTML='<div class="bkr-top"><span class="bnm">Pet insurance</span><span class="bvl">'+fmt(insAmt)+'</span></div><div class="bbg"><div class="bb" style="width:'+pct+'%"></div></div>';
     bd.appendChild(row);
   }
 }
-
-function render(){
-  renderPets();
-  renderSizes();
-  renderIns();
-  renderResults();
-}
-
-render();
+function render(){renderPets();renderSizes();renderIns();renderResults();}
+document.addEventListener("DOMContentLoaded",function(){
+  document.getElementById("ins-toggle").addEventListener("click",function(){ins=!ins;render();});
+  document.getElementById("tab-first").addEventListener("click",function(){view="firstYear";document.getElementById("tab-first").className="vt on";document.getElementById("tab-ongoing").className="vt";renderResults();});
+  document.getElementById("tab-ongoing").addEventListener("click",function(){view="ongoing";document.getElementById("tab-first").className="vt";document.getElementById("tab-ongoing").className="vt on";renderResults();});
+  document.getElementById("income-input").addEventListener("input",function(){renderResults();});
+  render();
+});
 </script>
 </body>
 </html>
