@@ -1,0 +1,93 @@
+---
+const { frontmatter } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{frontmatter.title} | RealPetCosts.com</title>
+<meta name="description" content={frontmatter.description}>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#1A1714;line-height:1.6}
+nav{background:#1A1714;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.logo{font-family:'DM Serif Display',serif;font-size:18px;color:#fff;text-decoration:none}
+.logo span{color:#FAC775}
+nav ul{display:flex;gap:20px;list-style:none}
+nav ul a{font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none}
+nav ul a:hover{color:#fff}
+.hero{background:#1A1714;padding:48px 24px 40px;text-align:center}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(26px,4vw,42px);color:#fff;line-height:1.2;max-width:720px;margin:0 auto 16px;letter-spacing:-0.5px}
+.hero p{font-size:15px;color:rgba(255,255,255,0.6);max-width:560px;margin:0 auto}
+.hero-img{width:100%;max-height:420px;object-fit:cover;display:block}
+.wrap{max-width:780px;margin:0 auto;padding:40px 24px}
+.article h2{font-family:'DM Serif Display',serif;font-size:clamp(20px,3vw,28px);color:#1A1714;margin:36px 0 14px;line-height:1.25}
+.article h3{font-family:'DM Serif Display',serif;font-size:clamp(17px,2.5vw,22px);color:#1A1714;margin:28px 0 10px}
+.article p{font-size:15px;color:#2A2420;line-height:1.75;margin-bottom:16px}
+.article ul,.article ol{padding-left:24px;margin-bottom:16px}
+.article li{font-size:15px;color:#2A2420;line-height:1.75;margin-bottom:6px}
+.article strong{font-weight:600;color:#1A1714}
+.article hr{border:none;border-top:1px solid rgba(26,23,20,0.12);margin:36px 0}
+.article table{width:100%;border-collapse:collapse;margin-bottom:24px;font-size:14px}
+.article th{background:#1A1714;color:#FAC775;padding:10px 14px;text-align:left;font-weight:600}
+.article td{padding:10px 14px;border-bottom:1px solid rgba(26,23,20,0.1);color:#2A2420}
+.article tr:nth-child(even) td{background:#F0EBE1}
+.article img{width:100%;border-radius:12px;margin:24px 0;box-shadow:0 4px 20px rgba(26,23,20,0.1)}
+.article blockquote{border-left:4px solid #C4700A;padding:14px 20px;background:#FDF0DC;border-radius:0 10px 10px 0;margin:24px 0;font-size:15px;color:#633806;line-height:1.65}
+.cta-box{background:#1A1714;border-radius:16px;padding:28px 24px;text-align:center;margin:40px 0}
+.cta-box h3{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;margin-bottom:10px}
+.cta-box p{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:20px}
+.cta-btn{display:inline-block;background:#C4700A;color:#fff;font-size:14px;font-weight:600;padding:12px 28px;border-radius:100px;text-decoration:none;transition:opacity 0.15s}
+.cta-btn:hover{opacity:0.85}
+.breadcrumb{font-size:12px;color:#857E77;padding:14px 0;border-bottom:1px solid rgba(26,23,20,0.08);margin-bottom:32px}
+.breadcrumb a{color:#857E77;text-decoration:none}
+.breadcrumb a:hover{color:#C4700A}
+footer{background:#1A1714;color:rgba(255,255,255,0.45);text-align:center;padding:28px 24px;margin-top:60px}
+footer .fl{font-family:'DM Serif Display',serif;font-size:15px;color:#FAC775;margin-bottom:6px}
+footer p{font-size:12px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">Real<span>Pet</span>Costs</a>
+  <ul>
+    <li><a href="/">Calculator</a></li>
+    <li><a href="/#breeds">Breeds</a></li>
+    <li><a href="/#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h1>{frontmatter.title}</h1>
+  <p>{frontmatter.description}</p>
+</div>
+
+{frontmatter.heroImage && <img class="hero-img" src={frontmatter.heroImage} alt={frontmatter.title} />}
+
+<div class="wrap">
+  <div class="breadcrumb">
+    <a href="/">RealPetCosts</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; {frontmatter.title}
+  </div>
+
+  <div class="article">
+    <slot />
+  </div>
+
+  <div class="cta-box">
+    <h3>Get your personalized pet cost estimate</h3>
+    <p>Use our free calculator to see exactly what your pet will cost — first year, ongoing, and lifetime.</p>
+    <a href="/" class="cta-btn">Use the free calculator</a>
+  </div>
+</div>
+
+<footer>
+  <div class="fl">RealPetCosts.com</div>
+  <p>Data updated monthly - Not financial advice - 2025 RealPetCosts.com</p>
+</footer>
+
+</body>
+</html>
