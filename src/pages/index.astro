@@ -116,6 +116,7 @@ footer p{font-size:12px}
   <a href="/" class="logo">Real<span>Pet</span>Costs</a>
   <ul>
     <li><a href="#calculator">Calculator</a></li>
+    <li><a href="#breeds">Breeds</a></li>
     <li><a href="#facts">Pet Facts</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
@@ -148,7 +149,7 @@ footer p{font-size:12px}
           <span class="flbl">Choose your pet</span>
           <div class="fg pg" id="pet-grid"></div>
           <div id="size-section" style="display:none">
-            <span class="flbl">Dog size</span>
+            <span class="flbl" id="size-label">Size</span>
             <div class="fg sg" id="size-grid"></div>
           </div>
           <div class="fg">
@@ -200,6 +201,55 @@ footer p{font-size:12px}
   </div>
 </div>
 
+<div class="wrap" id="breeds">
+  <div style="padding:48px 0 0">
+    <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,32px);margin-bottom:8px;">Browse by breed</h2>
+    <p style="font-size:14px;color:#857E77;margin-bottom:28px;">Breed-specific cost breakdowns with health risks, insurance needs, and real annual numbers.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:48px;">
+      <a href="/breeds/french-bulldog" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">French Bulldog</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$50k+ lifetime</div>
+      </a>
+      <a href="/breeds/golden-retriever" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">Golden Retriever</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$32k+ lifetime</div>
+      </a>
+      <a href="/breeds/labrador-retriever" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">Labrador Retriever</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$28k+ lifetime</div>
+      </a>
+      <a href="/breeds/german-shepherd" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">German Shepherd</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$30k+ lifetime</div>
+      </a>
+      <a href="/breeds/goldendoodle" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">Goldendoodle</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$35k+ lifetime</div>
+      </a>
+      <a href="/breeds/dachshund" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">Dachshund</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$22k+ lifetime</div>
+      </a>
+      <a href="/breeds/cane-corso" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">Cane Corso</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$38k+ lifetime</div>
+      </a>
+      <a href="/breeds/poodle" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">Poodle</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$28k+ lifetime</div>
+      </a>
+      <a href="/breeds/beagle" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">Beagle</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$18k+ lifetime</div>
+      </a>
+      <a href="/breeds/bulldog" style="display:block;background:#fff;border-radius:12px;border:1px solid rgba(26,23,20,0.1);padding:18px;text-decoration:none;transition:all 0.15s;">
+        <div style="font-size:14px;font-weight:600;color:#1A1714;margin-bottom:4px;">English Bulldog</div>
+        <div style="font-size:12px;color:#C4700A;font-weight:500;">$40k+ lifetime</div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <div class="stats-section" id="facts">
   <h2>The numbers most pet owners never see</h2>
   <div class="sgrid4">
@@ -227,14 +277,37 @@ footer p{font-size:12px}
 </footer>
 
 <script is:inline>
-var COSTS={dog:{small:{firstYear:{food:280,vet:450,grooming:220,supplies:260,training:200,spayNeuter:350,toys:100,boarding:300,misc:110},ongoing:{food:280,vet:400,grooming:220,supplies:60,training:0,spayNeuter:0,toys:100,boarding:300,misc:110}},medium:{firstYear:{food:480,vet:550,grooming:320,supplies:320,training:300,spayNeuter:420,toys:150,boarding:400,misc:150},ongoing:{food:480,vet:500,grooming:320,supplies:80,training:0,spayNeuter:0,toys:150,boarding:400,misc:150}},large:{firstYear:{food:800,vet:700,grooming:420,supplies:460,training:500,spayNeuter:520,toys:200,boarding:600,misc:200},ongoing:{food:800,vet:650,grooming:420,supplies:100,training:0,spayNeuter:0,toys:200,boarding:600,misc:200}}},cat:{standard:{firstYear:{food:320,vet:380,grooming:50,supplies:220,spayNeuter:300,toys:80,litter:300,misc:100},ongoing:{food:320,vet:350,grooming:50,supplies:50,spayNeuter:0,toys:80,litter:300,misc:100}}},rabbit:{standard:{firstYear:{food:200,vet:300,supplies:220,spayNeuter:250,toys:50,hay:200,misc:80},ongoing:{food:200,vet:250,supplies:40,spayNeuter:0,toys:50,hay:200,misc:80}}},bird:{standard:{firstYear:{food:150,vet:200,supplies:320,training:60,toys:80,misc:60},ongoing:{food:150,vet:150,supplies:60,training:0,toys:80,misc:60}}}};
-var LIFE={dog:{small:15,medium:12,large:10},cat:{standard:16},rabbit:{standard:10},bird:{standard:12}};
-var INS={dog:{small:500,medium:800,large:1100},cat:{standard:350},rabbit:{standard:0},bird:{standard:0}};
+var COSTS={
+  dog:{
+    small:{firstYear:{food:280,vet:450,grooming:220,supplies:260,training:200,spayNeuter:350,toys:100,boarding:300,misc:110},ongoing:{food:280,vet:400,grooming:220,supplies:60,training:0,spayNeuter:0,toys:100,boarding:300,misc:110}},
+    medium:{firstYear:{food:480,vet:550,grooming:320,supplies:320,training:300,spayNeuter:420,toys:150,boarding:400,misc:150},ongoing:{food:480,vet:500,grooming:320,supplies:80,training:0,spayNeuter:0,toys:150,boarding:400,misc:150}},
+    large:{firstYear:{food:800,vet:700,grooming:420,supplies:460,training:500,spayNeuter:520,toys:200,boarding:600,misc:200},ongoing:{food:800,vet:650,grooming:420,supplies:100,training:0,spayNeuter:0,toys:200,boarding:600,misc:200}}
+  },
+  cat:{
+    small:{firstYear:{food:250,vet:350,grooming:40,supplies:200,spayNeuter:280,toys:70,litter:280,misc:80},ongoing:{food:250,vet:320,grooming:40,supplies:40,spayNeuter:0,toys:70,litter:280,misc:80}},
+    medium:{firstYear:{food:320,vet:380,grooming:50,supplies:220,spayNeuter:300,toys:80,litter:300,misc:100},ongoing:{food:320,vet:350,grooming:50,supplies:50,spayNeuter:0,toys:80,litter:300,misc:100}},
+    large:{firstYear:{food:450,vet:450,grooming:150,supplies:260,spayNeuter:350,toys:100,litter:350,misc:120},ongoing:{food:450,vet:420,grooming:150,supplies:60,spayNeuter:0,toys:100,litter:350,misc:120}}
+  },
+  rabbit:{
+    standard:{firstYear:{food:200,vet:300,supplies:220,spayNeuter:250,toys:50,hay:200,misc:80},ongoing:{food:200,vet:250,supplies:40,spayNeuter:0,toys:50,hay:200,misc:80}}
+  },
+  bird:{
+    standard:{firstYear:{food:150,vet:200,supplies:320,training:60,toys:80,misc:60},ongoing:{food:150,vet:150,supplies:60,training:0,toys:80,misc:60}}
+  }
+};
+var LIFE={dog:{small:15,medium:12,large:10},cat:{small:16,medium:16,large:14},rabbit:{standard:10},bird:{standard:12}};
+var INS={dog:{small:500,medium:800,large:1100},cat:{small:300,medium:350,large:450},rabbit:{standard:0},bird:{standard:0}};
 var CLBLS={food:"Food and treats",vet:"Veterinary care",grooming:"Grooming",supplies:"Supplies",training:"Training",spayNeuter:"Spay and neuter",toys:"Toys and enrichment",boarding:"Boarding and sitting",litter:"Litter",hay:"Hay and bedding",misc:"Miscellaneous"};
 var CICONS={food:"food",vet:"vet",grooming:"groom",supplies:"supply",training:"train",spayNeuter:"heart",toys:"toy",boarding:"home",litter:"litter",hay:"hay",misc:"misc"};
-var pet=null,size="medium",view="firstYear",ins=false;
+
+var DOG_SIZES=[{id:"small",l:"Small",s:"Under 25 lbs"},{id:"medium",l:"Medium",s:"25-60 lbs"},{id:"large",l:"Large",s:"Over 60 lbs"}];
+var CAT_SIZES=[{id:"small",l:"Small",s:"Under 8 lbs"},{id:"medium",l:"Medium",s:"8-12 lbs"},{id:"large",l:"Large",s:"Over 12 lbs"}];
+
+var pet=null, size="medium", view="firstYear", ins=false;
+
 function fmt(n){return"$"+Math.round(n).toLocaleString();}
 function fmtK(n){var v=Math.round(n/100)/10;return v>=10?"$"+Math.round(v)+"k":"$"+v.toFixed(1)+"k";}
+
 function getVerdict(monthly,income){
   if(!income||income<=0)return null;
   var pct=Math.round((monthly/income)*100);
@@ -243,39 +316,52 @@ function getVerdict(monthly,income){
   if(pct<=15)return{msg:"This pet will stretch your budget. Consider a smaller breed or a cat - "+pct+"% of your monthly income.",color:"#C4700A",bg:"#FEF3E2"};
   return{msg:"This pet may strain your finances. Build a 3-month emergency fund first - "+pct+"% of your monthly income.",color:"#A32D2D",bg:"#FCEBEB"};
 }
+
+function getSizeOptions(){
+  if(pet==="dog")return DOG_SIZES;
+  if(pet==="cat")return CAT_SIZES;
+  return null;
+}
+
+function getVariant(){
+  if(pet==="dog"||pet==="cat")return size;
+  return "standard";
+}
+
 function renderPets(){
   var g=document.getElementById("pet-grid");
   g.innerHTML="";
-  var pets=[{id:"dog",l:"Dog",e:"Dog"},{id:"cat",l:"Cat",e:"Cat"},{id:"rabbit",l:"Rabbit",e:"Rabbit"},{id:"bird",l:"Bird",e:"Bird"}];
-  for(var i=0;i<pets.length;i++){
-    var p=pets[i];
+  [{id:"dog",l:"Dog",e:"Dog"},{id:"cat",l:"Cat",e:"Cat"},{id:"rabbit",l:"Rabbit",e:"Rabbit"},{id:"bird",l:"Bird",e:"Bird"}].forEach(function(p){
     var b=document.createElement("button");
     b.className="pb"+(pet===p.id?" on":"");
     b.setAttribute("data-pet",p.id);
     b.innerHTML='<span class="lb">'+p.l+'</span>';
-    b.addEventListener("click",function(){pet=this.getAttribute("data-pet");ins=false;render();});
+    b.addEventListener("click",function(){pet=this.getAttribute("data-pet");size="medium";ins=false;render();});
     g.appendChild(b);
-  }
+  });
 }
+
 function renderSizes(){
   var sec=document.getElementById("size-section");
-  sec.style.display=pet==="dog"?"block":"none";
-  if(pet!=="dog")return;
+  var sizes=getSizeOptions();
+  if(!sizes){sec.style.display="none";return;}
+  sec.style.display="block";
+  var lbl=document.getElementById("size-label");
+  if(lbl)lbl.textContent=pet==="cat"?"Cat size":"Dog size";
   var g=document.getElementById("size-grid");
   g.innerHTML="";
-  var sizes=[{id:"small",l:"Small",s:"Under 25 lbs"},{id:"medium",l:"Medium",s:"25-60 lbs"},{id:"large",l:"Large",s:"Over 60 lbs"}];
-  for(var i=0;i<sizes.length;i++){
-    var s=sizes[i];
+  sizes.forEach(function(s){
     var b=document.createElement("button");
     b.className="sb"+(size===s.id?" on":"");
     b.setAttribute("data-size",s.id);
     b.innerHTML='<div class="sm">'+s.l+'</div><div class="ss">'+s.s+'</div>';
     b.addEventListener("click",function(){size=this.getAttribute("data-size");render();});
     g.appendChild(b);
-  }
+  });
 }
+
 function renderIns(){
-  var v=pet==="dog"?size:"standard";
+  var v=getVariant();
   var amt=pet?INS[pet][v]||0:0;
   var row=document.getElementById("ins-row");
   if(!pet||amt===0){row.style.display="none";return;}
@@ -285,26 +371,24 @@ function renderIns(){
   sw.className="tsw"+(ins?" on":"");
   sw.querySelector(".tk").style.left=ins?"23px":"3px";
 }
+
 function renderResults(){
   if(!pet){document.getElementById("results").style.display="none";return;}
   document.getElementById("results").style.display="block";
-  var v=pet==="dog"?size:"standard";
+  var v=getVariant();
   var data=COSTS[pet][v];
   if(!data)return;
   var insAmt=ins?(INS[pet][v]||0):0;
   var lifespan=LIFE[pet][v];
   var cats=data[view];
   var keys=Object.keys(cats);
-  var base=0;
-  for(var i=0;i<keys.length;i++)base+=cats[keys[i]];
+  var base=0;for(var i=0;i<keys.length;i++)base+=cats[keys[i]];
   var total=base+insAmt;
   var fykeys=Object.keys(data.firstYear);
-  var fy=0;
-  for(var i=0;i<fykeys.length;i++)fy+=data.firstYear[fykeys[i]];
+  var fy=0;for(var i=0;i<fykeys.length;i++)fy+=data.firstYear[fykeys[i]];
   if(ins)fy+=INS[pet][v];
   var ongkeys=Object.keys(data.ongoing);
-  var ong=0;
-  for(var i=0;i<ongkeys.length;i++)ong+=data.ongoing[ongkeys[i]];
+  var ong=0;for(var i=0;i<ongkeys.length;i++)ong+=data.ongoing[ongkeys[i]];
   if(ins)ong+=INS[pet][v];
   var lifetime=fy+(ong*(lifespan-1));
   document.getElementById("c1l").textContent=view==="firstYear"?"First year total":"Annual cost";
@@ -315,44 +399,33 @@ function renderResults(){
   var income=parseFloat(document.getElementById("income-input").value)||0;
   var verdict=getVerdict(total/12,income);
   var vbox=document.getElementById("verdict");
-  if(verdict){
-    vbox.style.display="block";
-    vbox.style.background=verdict.bg;
-    vbox.style.color=verdict.color;
-    vbox.style.border="1px solid "+verdict.color;
-    vbox.textContent=verdict.msg;
-  } else {
-    vbox.style.display="none";
-  }
+  if(verdict){vbox.style.display="block";vbox.style.background=verdict.bg;vbox.style.color=verdict.color;vbox.style.border="1px solid "+verdict.color;vbox.textContent=verdict.msg;}
+  else{vbox.style.display="none";}
   var allkeys=Object.keys(cats);
   var entries=[];
-  for(var i=0;i<allkeys.length;i++){
-    if(cats[allkeys[i]]>0)entries.push([allkeys[i],cats[allkeys[i]]]);
-  }
+  for(var i=0;i<allkeys.length;i++){if(cats[allkeys[i]]>0)entries.push([allkeys[i],cats[allkeys[i]]]);}
   entries.sort(function(a,b){return b[1]-a[1];});
   var maxV=insAmt;
   for(var i=0;i<entries.length;i++)if(entries[i][1]>maxV)maxV=entries[i][1];
-  var bd=document.getElementById("breakdown");
-  bd.innerHTML="";
+  var bd=document.getElementById("breakdown");bd.innerHTML="";
   for(var i=0;i<entries.length;i++){
-    var key=entries[i][0];
-    var val=entries[i][1];
-    var row=document.createElement("div");
-    row.className="bkrow";
+    var key=entries[i][0];var val=entries[i][1];
+    var row=document.createElement("div");row.className="bkrow";
     if(i<entries.length-1)row.style.borderBottom="1px solid rgba(26,23,20,0.08)";
     var pct=Math.round((val/maxV)*100);
     row.innerHTML='<div class="bkr-top"><span class="bnm">'+(CLBLS[key]||key)+'</span><span class="bvl">'+fmt(val)+'</span></div><div class="bbg"><div class="bb" style="width:'+pct+'%"></div></div>';
     bd.appendChild(row);
   }
   if(ins&&insAmt>0){
-    var row=document.createElement("div");
-    row.className="bkrow ins";
+    var row=document.createElement("div");row.className="bkrow ins";
     var pct=Math.round((insAmt/maxV)*100);
     row.innerHTML='<div class="bkr-top"><span class="bnm">Pet insurance</span><span class="bvl">'+fmt(insAmt)+'</span></div><div class="bbg"><div class="bb" style="width:'+pct+'%"></div></div>';
     bd.appendChild(row);
   }
 }
+
 function render(){renderPets();renderSizes();renderIns();renderResults();}
+
 document.addEventListener("DOMContentLoaded",function(){
   document.getElementById("ins-toggle").addEventListener("click",function(){ins=!ins;render();});
   document.getElementById("tab-first").addEventListener("click",function(){view="firstYear";document.getElementById("tab-first").className="vt on";document.getElementById("tab-ongoing").className="vt";renderResults();});
