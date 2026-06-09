@@ -3,10 +3,6 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://realpetcosts.com',
+  site: 'https://www.realpetcosts.com',
   integrations: [sitemap()],
-  markdown: {
-    remarkPlugins: [],
-    rehypePlugins: []
-  }
 });
