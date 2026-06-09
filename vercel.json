@@ -1,0 +1,15 @@
+{
+    "redirects": [
+      {
+        "source": "/:path*",
+        "has": [
+          {
+            "type": "host",
+            "value": "realpetcosts.com"
+          }
+        ],
+        "destination": "https://www.realpetcosts.com/:path*",
+        "permanent": true
+      }
+    ]
+  }
